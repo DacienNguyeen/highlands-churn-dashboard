@@ -1,0 +1,29 @@
+OccupationID,Occupation#group,Occupation
+OCC28,Blue Collar,"Unskilled Labor (worker, landry person, driver, security guard, cleaner)"
+OCC25,Blue Collar,"Skilled Labor (tailor, machinist, carpenter, electrician)"
+OCC24,Blue Collar,"Semi-skilled labor (salesperson, waiter, photographer)"
+OCC16,White Collar,Officer - Staff level
+OCC12,White Collar,Lecturer / Teacher
+OCC18,White Collar,"Professional (doctor, engineer, architect, nursing staff, lawyer, researcher, etc.)"
+OCC05,White Collar,Civil servant - Staff level
+OCC14,White Collar,Officer - Middle Management
+OCC06,White Collar,Civil servant  - Middle Management
+OCC11,White Collar,Junior Manager / Executive
+OCC07,White Collar,Civil servant  - Senior Management
+OCC15,White Collar,Officer - Senior Management
+OCC09,None Working,Housewife
+OCC21,None Working,Retirement
+OCC19,None Working,Pupil / Student
+OCC27,None Working,Unemployed
+OCC26,Self Employed - Small Business and Freelance,"Small Business (small shop owner, grocery store, etc.)"
+OCC03,Self Employed - Small Business and Freelance,Broker/ Service provider with no employee
+OCC08,Self Employed - Small Business and Freelance,Freelance
+OCC13,Other Occupations,Military / Police
+OCC01,Other Occupations,"Agriculture / Forestry (Fishing, planting, farming)"
+OCC02,Other Occupations,"Artist (actor/actress, singer, painter, model)"
+OCC10,Other Occupations,Job hunting
+OCC17,Other Occupations,Other
+OCC04,Self Employed - Company Owner,Business Owner with less than 10 employees
+OCC23,Self Employed - Company Owner,Self Employed  - Company owner (under 10 employees)
+OCC22,Self Employed - Company Owner,Self Employed - Company owner (10 - 20 employees)
+OCC20,Refuse,Refuse

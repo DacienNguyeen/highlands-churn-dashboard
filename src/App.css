@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  /* Highlands Coffee Brand Colors */
+  --highlands-red: #b3282d;
+  --highlands-gold: #be955c;
+  --highlands-cream: #fdfcfb;
+  --highlands-brown: #513529;
+  --highlands-orange: #b96345;
+  
+  --background: var(--highlands-cream);
+  --foreground: var(--highlands-brown);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--highlands-brown);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--highlands-brown);
+  --primary: var(--highlands-red);
+  --primary-foreground: var(--highlands-cream);
+  --secondary: var(--highlands-gold);
+  --secondary-foreground: var(--highlands-brown);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: var(--highlands-orange);
+  --accent-foreground: var(--highlands-cream);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: var(--highlands-gold);
+  --chart-1: var(--highlands-red);
+  --chart-2: var(--highlands-gold);
+  --chart-3: var(--highlands-orange);
+  --chart-4: var(--highlands-brown);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: var(--highlands-cream);
+  --sidebar-foreground: var(--highlands-brown);
+  --sidebar-primary: var(--highlands-red);
+  --sidebar-primary-foreground: var(--highlands-cream);
+  --sidebar-accent: var(--highlands-gold);
+  --sidebar-accent-foreground: var(--highlands-brown);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: var(--highlands-gold);
+}
+
+.dark {
+  --background: var(--highlands-brown);
+  --foreground: var(--highlands-cream);
+  --card: oklch(0.205 0 0);
+  --card-foreground: var(--highlands-cream);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: var(--highlands-cream);
+  --primary: var(--highlands-red);
+  --primary-foreground: var(--highlands-cream);
+  --secondary: var(--highlands-gold);
+  --secondary-foreground: var(--highlands-brown);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: var(--highlands-orange);
+  --accent-foreground: var(--highlands-cream);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: var(--highlands-gold);
+  --chart-1: var(--highlands-red);
+  --chart-2: var(--highlands-gold);
+  --chart-3: var(--highlands-orange);
+  --chart-4: var(--highlands-brown);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: var(--highlands-brown);
+  --sidebar-foreground: var(--highlands-cream);
+  --sidebar-primary: var(--highlands-red);
+  --sidebar-primary-foreground: var(--highlands-cream);
+  --sidebar-accent: var(--highlands-gold);
+  --sidebar-accent-foreground: var(--highlands-brown);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: var(--highlands-gold);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for Highlands Coffee Dashboard */
+.highlands-gradient {
+  background: linear-gradient(135deg, var(--highlands-red) 0%, var(--highlands-orange) 100%);
+}
+
+.highlands-text-gradient {
+  background: linear-gradient(135deg, var(--highlands-red) 0%, var(--highlands-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.churn-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(179, 40, 45, 0.1);
+}
+
+.churn-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(179, 40, 45, 0.15);
+  border-color: var(--highlands-red);
+}
+
+.metric-card {
+  background: linear-gradient(135deg, rgba(253, 252, 251, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(179, 40, 45, 0.1);
+}
+
+.chart-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(179, 40, 45, 0.1);
+  border-radius: 12px;
+}
+

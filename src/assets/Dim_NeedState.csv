@@ -1,0 +1,16 @@
+NeedStateID,NeedStateGroupNew,NeedStates
+NS01,Drinking beverages,Drinking coffee
+NS03,Drinking beverages,"Drinking other beverages (excluding tea, coffee, freeze)"
+NS04,Drinking beverages,Drinking tea
+NS02,Drinking beverages,Drinking ice-blended
+NS09,Socializing,Socializing with colleagues
+NS10,Socializing,Socializing with family / relatives
+NS12,Socializing,Socialzing
+NS11,Socializing,Socializing with friends
+NS07,Relaxing & entertainment,"Enterntainment (watching movies. Playing games, browsing web,…)"
+NS08,Relaxing & entertainment,Relaxing (Alone)
+NS05,Meals & Snack,Have meals (breakfast / lunch / dinner)
+NS06,Meals & Snack,Have snack / pastry
+NS14,Studying,Studying / Reading books
+NS13,Other,Other
+NS15,Working & business meeting,Working / Business meeting

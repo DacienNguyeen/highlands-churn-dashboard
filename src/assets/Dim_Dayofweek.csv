@@ -1,0 +1,9 @@
+DayID,DayType,DayofWeek
+DAY03,Weekdays,Monday
+DAY02,Weekdays,Friday
+DAY04,Weekdays,Thursday
+DAY06,Weekdays,Wednesday
+DAY05,Weekdays,Tuesday
+DAY07,Weekends,Saturday
+DAY08,Weekends,Sunday
+DAY01,Unknown,Unknown
